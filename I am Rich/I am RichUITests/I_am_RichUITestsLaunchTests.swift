@@ -2,7 +2,7 @@
 //  I_am_RichUITestsLaunchTests.swift
 //  I am RichUITests
 //
-//  Created by 中原護 on 2023/04/24.
+//  Created by 中原護 on 2023/04/25.
 //
 
 import XCTest
