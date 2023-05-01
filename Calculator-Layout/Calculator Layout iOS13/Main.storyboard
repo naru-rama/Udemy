@@ -221,9 +221,6 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Bgj-Wa-Obo" secondAttribute="trailing" constant="20" id="Rwz-xI-qcx"/>
-                                    <constraint firstItem="Bgj-Wa-Obo" firstAttribute="leading" secondItem="2yw-vh-UAy" secondAttribute="leading" constant="20" id="Wxa-Kw-lte"/>
-                                    <constraint firstItem="hSZ-Ax-JYO" firstAttribute="top" secondItem="Bgj-Wa-Obo" secondAttribute="bottom" id="g7i-wR-upc"/>
                                     <constraint firstItem="Bgj-Wa-Obo" firstAttribute="top" secondItem="2yw-vh-UAy" secondAttribute="top" id="jP8-IE-jaq"/>
                                 </constraints>
                             </stackView>
