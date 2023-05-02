@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct WeahterModel {
+    let couditionId: Int
+    let cityName: String
+    let temmmperature: Double
+}
