@@ -10,7 +10,6 @@ import UIKit
 
 class CalculatorViewController: UIViewController {
     
-    var totalCost = 0.0
     var numberofPeople = 2
     var tipRatio = 0.0
     var result = "0.0"
@@ -48,12 +47,10 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func calculatePressed(_ sender: UIButton) {
-        if billTextField.text != "" {
-            totalCost = Double(billTextField.text!)!
-            numberofPeople = Int(splitNumberLabel.text!)!
-            result = String(format: "%.2f", (totalCost + totalCost * tipRatio) / Double(numberofPeople))
-            self.performSegue(withIdentifier: "goToResult", sender: self)
-        }
+        guard let totalCost = Double(billTextField.text ?? ""), let splitNumber = Double(splitNumberLabel.text ?? "") else { return }
+        numberofPeople = Int(splitNumber)
+        result = String(format: "%.2f", (totalCost + totalCost * tipRatio) / Double(numberofPeople))
+        self.performSegue(withIdentifier: "goToResult", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
