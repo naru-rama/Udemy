@@ -48,7 +48,7 @@ extension WeatherViewController: UITextFieldDelegate {
     }
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        if textField.text != "" {
+        if let text = textField.text, !text.isEmpty {
             return true
         } else {
             textField.placeholder = "Type something"
@@ -85,12 +85,11 @@ extension WeatherViewController: WeatherManagerDelegate {
 
 extension WeatherViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let location = locations.last {
-            locationManager.stopUpdatingLocation()
-            let lat = location.coordinate.latitude
-            let lon = location.coordinate.longitude
-            weatherManager.fetchWeather(latitude: lat, longitude: lon)
-        }
+        guard let location = locations.last else { return }
+        locationManager.stopUpdatingLocation()
+        let lat = location.coordinate.latitude
+        let lon = location.coordinate.longitude
+        weatherManager.fetchWeather(latitude: lat, longitude: lon)
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
