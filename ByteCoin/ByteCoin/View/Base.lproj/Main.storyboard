@@ -28,11 +28,7 @@
                                 <rect key="frame" x="0.0" y="58" width="414" height="165"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ByteCoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAM-79-vXn">
-                                        <rect key="frame" x="92" y="0.0" width="230" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="bMu-oK-jI2"/>
-                                            <constraint firstAttribute="height" constant="60" id="szc-9z-u5Q"/>
-                                        </constraints>
+                                        <rect key="frame" x="116" y="0.0" width="182.5" height="60"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
                                         <color key="textColor" name="Title Color"/>
                                         <nil key="highlightedColor"/>
@@ -48,6 +44,7 @@
                                                         <color key="tintColor" name="Icon Color"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="0gP-tk-0h7"/>
+                                                            <constraint firstAttribute="height" constant="80" id="b1C-lX-qlB"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2a-Ax-iRV">
@@ -75,7 +72,6 @@
                                             <constraint firstAttribute="trailing" secondItem="Ocx-jo-FtC" secondAttribute="trailing" constant="10" id="Qu0-hp-NgW"/>
                                             <constraint firstItem="Ocx-jo-FtC" firstAttribute="leading" secondItem="y91-qX-d96" secondAttribute="leading" id="YrU-Yp-Yu8"/>
                                             <constraint firstItem="Ocx-jo-FtC" firstAttribute="top" secondItem="y91-qX-d96" secondAttribute="top" id="joV-wc-L2Q"/>
-                                            <constraint firstAttribute="height" constant="80" id="pPp-uS-nxw"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
