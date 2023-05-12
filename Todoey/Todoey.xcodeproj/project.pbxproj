@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026281B72A0C99B2003F2AFC /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026281B62A0C99B2003F2AFC /* SwipeTableViewController.swift */; };
 		02A09A452A08A4D6008DF9D7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A09A442A08A4D6008DF9D7 /* Item.swift */; };
 		02A09A472A08A4ED008DF9D7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A09A462A08A4ED008DF9D7 /* Category.swift */; };
 		02D40B7B2A076AEB000964E6 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D40B7A2A076AEB000964E6 /* CategoryViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		026281B62A0C99B2003F2AFC /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		02A09A442A08A4D6008DF9D7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		02A09A462A08A4ED008DF9D7 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		02D40B7A2A076AEB000964E6 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				EB2BE4FD239524DB00FB933B /* TodoListViewController.swift */,
 				02D40B7A2A076AEB000964E6 /* CategoryViewController.swift */,
+				026281B62A0C99B2003F2AFC /* SwipeTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				02D40B7B2A076AEB000964E6 /* CategoryViewController.swift in Sources */,
 				EB2BE4FE239524DB00FB933B /* TodoListViewController.swift in Sources */,
 				EB2BE4FA239524DB00FB933B /* AppDelegate.swift in Sources */,
+				026281B72A0C99B2003F2AFC /* SwipeTableViewController.swift in Sources */,
 				02A09A472A08A4ED008DF9D7 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
