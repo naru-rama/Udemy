@@ -27,20 +27,18 @@ class ViewController: UIViewController {
         }
     }
     
+    private var calculator = CalculatorLogic()
+    
     @IBAction func calcButtonPressed(_ sender: UIButton) {
         isFinishedTypingNumber = true
+        calculator.setNumber(displayValue)
         
-        guard let calcMethod = sender.currentTitle else { return }
-        if calcMethod == "+/-" {
-            displayValue *= -1
-        } else if calcMethod == "AC" {
-            displayLabel.text = "0"
-        } else if calcMethod == "%" {
-            displayValue *= 0.01
+        if let calcMethod = sender.currentTitle {
+            if let result = calculator.calculate(symbol: calcMethod) {
+                displayValue = result
+            }
         }
-        
     }
-
     
     @IBAction func numButtonPressed(_ sender: UIButton) {
         guard let numValue = sender.currentTitle else { return }
@@ -58,6 +56,4 @@ class ViewController: UIViewController {
         }
         
     }
-
 }
-
